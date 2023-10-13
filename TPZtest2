@@ -1,0 +1,16 @@
+
+PImage ljImg;
+
+void setup() {
+size(1500, 1200);
+
+ljImg = loadImage("LJ_comix_1.png");
+imageMode(CENTER);
+background(255);
+//frameRate(3);
+}
+
+void draw() {
+tint(mouseX,mouseY,random(0,200));
+image(ljImg, random(0,1500), random(0,1500));
+}
